@@ -1,0 +1,105 @@
+
+:root {
+    --cor-fundo: #fef9e4; 
+    --cor-texto: #333; 
+    --cor-borda: #f1c40f; 
+    --cor-fundo-input: #fff; 
+    --cor-borda-input: #f39c12; 
+    --cor-borda-focus: #f39c12; 
+    --cor-botao: #f39c12; 
+    --cor-botao-hover: #e67e22; 
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .hs h1, .hs h2, .hs h3 {
+    text-align: center;
+    color: var(--cor-borda);
+  }
+  
+  
+  form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cor-fundo-input);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  label {
+    display: inline;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    
+  }
+  
+ 
+  input[type="text"],
+  input[type="email"],
+  input[type="number"]
+  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid var(--cor-borda-input);
+    border-radius: 1px;
+    background-color: var(--cor-fundo-input);
+    color: var(--cor-texto);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    
+  }
+  
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="radio"]:focus {
+    border-color: var(--cor-borda-focus);
+    outline: none;
+  }
+  
+
+  button {
+    background-color: var(--cor-botao);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  button:hover {
+    background-color: var(--cor-botao-hover);
+  }
+  
+
+  legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-borda);
+    margin-bottom: 12px;
+  }
+  
+
+  fieldset {
+    border: 2px solid var(--cor-borda);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jane Quezia - Questionario Comportamental</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+    
+<div class="hs">
+  <h1>AGGREGA BENEFICIOS</h1>
+  <h2>Se você acredita que a frase tem a ver com você, marque 4 ou 5</h2>
+  <h3>Se você não acredita que a frase tem a ver com você, marque 1 ou 2</h3>
+</div>
+
+  
+
+  <form id="questionario">
+    <label>Nome: <input type="text" name="nome" id="nome" required></label>
+    <label>E-mail: <input type="email" name="email" id="email" required></label>
+    <label>Telefone: <input type="number" name="telefone" id="telefone" required></label><br>
+
+    <fieldset class="pergunta">
+      <legend>1. Gosto de atividades novas, diferentes e desafiadoras</legend>
+      <label><input type="radio" name="q1" value="C-1" required> 1</label> <br>
+      <label><input type="radio" name="q1" value="S-2"> 2</label><br>
+      <label><input type="radio" name="q1" value="D-4" required>4</label><br>
+      <label><input type="radio" name="q1" value="I-5"> 5</label>
+    </fieldset>
+
+    <fieldset class="pergunta">
+        <legend>2. Minha prioridde no trabalho é atingir resultados convincentes:</legend>
+        <label><input type="radio" name="q2" value="C-1" required>1</label> <br>
+        <label><input type="radio" name="q2" value="S-2">2</label><br>
+        <label><input type="radio" name="q2" value="D-4" required>4</label><br>
+        <label><input type="radio" name="q2" value="I-5">5</label>
+    </fieldset>
+
+    <fieldset class="pergunta">
+      <legend>3. Gosto de ser desafiado e de promover desafios</legend>
+      <label><input type="radio" name="q3" value="C-1" required>1</label> <br>
+      <label><input type="radio" name="q3" value="S-2">2</label><br>
+      <label><input type="radio" name="q3" value="D-4" required>4</label><br>
+      <label><input type="radio" name="q3" value="I-5">5</label>
+  </fieldset>
+
+
+  <fieldset class="pergunta">
+      <legend>4. Gosto de ter oportunidades para competir e sair vencedor</legend>
+      <label><input type="radio" name="q4" value="C-1" required>1</label> <br>
+      <label><input type="radio" name="q4" value="S-2">2</label><br>
+      <label><input type="radio" name="q4" value="D-4" required>4</label><br>
+      <label><input type="radio" name="q4" value="I-5">5</label>
+  </fieldset>
+
+  <fieldset class="pergunta">
+    <legend>5. Sou mais produtivo quando não sou monitorado ou supervisionado</legend>
+    <label><input type="radio" name="q5" value="C-1" required>1</label> <br>
+    <label><input type="radio" name="q5" value="S-2">2</label><br>
+    <label><input type="radio" name="q5" value="D-4" required>4</label><br>
+    <label><input type="radio" name="q5" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+  <legend>6. Na minha ascensão profissional priorizo obter poder, fama e dinheiro</legend>
+  <label><input type="radio" name="q6" value="C-1" required>1</label> <br>
+  <label><input type="radio" name="q6" value="S-2">2</label><br>
+  <label><input type="radio" name="q6" value="D-4" required>4</label><br>
+  <label><input type="radio" name="q6" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>7. Necessito ter liberdade para expor minhas opniões aos outros</legend>
+<label><input type="radio" name="q7" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q7" value="S-2">2</label><br>
+<label><input type="radio" name="q7" value="D-4" required>4</label><br>
+<label><input type="radio" name="q7" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>8. É importante para mim que as pessoas valorizem minha atuação</legend>
+<label><input type="radio" name="q8" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q8" value="S-2">2</label><br>
+<label><input type="radio" name="q8" value="D-4" required>4</label><br>
+<label><input type="radio" name="q8" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>9. Ser popular e reconecido por minhas habilidades me satisfaz plenamente</legend>
+<label><input type="radio" name="q9" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q9" value="S-2">2</label><br>
+<label><input type="radio" name="q9" value="D-4" required>4</label><br>
+<label><input type="radio" name="q9" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>10. Tenho facilidade em perceber o que as pessoas estão sentindo</legend>
+<label><input type="radio" name="q10" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q10" value="S-2">2</label><br>
+<label><input type="radio" name="q10" value="D-4" required>4</label><br>
+<label><input type="radio" name="q10" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>11. Prefiro trabalhar em equipe e alcançar resultados através de outras pessoas</legend>
+<label><input type="radio" name="q11" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q11" value="S-2">2</label><br>
+<label><input type="radio" name="q11" value="D-4" required>4</label><br>
+<label><input type="radio" name="q11" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>12. Gosto de influenciar e convencer as pessoas </legend>
+<label><input type="radio" name="q12" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q12" value="S-2">2</label><br>
+<label><input type="radio" name="q12" value="D-4" required>4</label><br>
+<label><input type="radio" name="q12" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>13. Prefiro trabalhar em ambientes organizados, estruturados e sem muitas mudanças</legend>
+<label><input type="radio" name="q13" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q13" value="S-2">2</label><br>
+<label><input type="radio" name="q13" value="D-4" required>4</label><br>
+<label><input type="radio" name="q13" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>14. É importante saber que as pessoas estão satisfeitas com o que eu faço</legend>
+<label><input type="radio" name="q14" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q14" value="S-2">2</label><br>
+<label><input type="radio" name="q14" value="D-4" required>4</label><br>
+<label><input type="radio" name="q14" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>15. Necessito me sentir seguro no cargo e na empresa que trabalho</legend>
+<label><input type="radio" name="q15" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q15" value="S-2">2</label><br>
+<label><input type="radio" name="q15" value="D-4" required>4</label><br>
+<label><input type="radio" name="q15" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>16. Minha familia vem sempre em primeiro lugar </legend>
+<label><input type="radio" name="q16" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q16" value="S-2">2</label><br>
+<label><input type="radio" name="q16" value="D-4" required>4</label><br>
+<label><input type="radio" name="q16" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>17. Gosto que reconheçam o tempo que investi na realização de uma tarefa</legend>
+<label><input type="radio" name="q17" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q17" value="S-2">2</label><br>
+<label><input type="radio" name="q17" value="D-4" required>4</label><br>
+<label><input type="radio" name="q17" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>18. Preciso de tempo para me adaptar a mudanças</legend>
+<label><input type="radio" name="q18" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q18" value="S-2">2</label><br>
+<label><input type="radio" name="q18" value="D-4" required>4</label><br>
+<label><input type="radio" name="q18" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>19. Gosto de realizar tarefas e projetos que priorizem o raciocinio lógico</legend>
+<label><input type="radio" name="q19" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q19" value="S-2">2</label><br>
+<label><input type="radio" name="q19" value="D-4" required>4</label><br>
+<label><input type="radio" name="q19" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>20. Prefiro trabalhar constantemente na minha area e buscar especialização</legend>
+<label><input type="radio" name="q20" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q20" value="S-2">2</label><br>
+<label><input type="radio" name="q20" value="D-4" required>4</label><br>
+<label><input type="radio" name="q20" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>21. Gosto de atuar em trabalhos que envolvam a precisão e atenção aos detalhes</legend>
+<label><input type="radio" name="q21" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q21" value="S-2">2</label><br>
+<label><input type="radio" name="q21" value="D-4" required>4</label><br>
+<label><input type="radio" name="q21" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>22. Gosto de receber feedback constantemente para saber se estou no caminho certo</legend>
+<label><input type="radio" name="q22" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q22" value="S-2">2</label><br>
+<label><input type="radio" name="q22" value="D-4" required>4</label><br>
+<label><input type="radio" name="q22" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>23. GPrefiro realizar tarefas que estejam apoiadas em normas, regras e procedimentos</legend>
+<label><input type="radio" name="q23" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q23" value="S-2">2</label><br>
+<label><input type="radio" name="q23" value="D-4" required>4</label><br>
+<label><input type="radio" name="q23" value="I-5">5</label>
+</fieldset>
+
+<fieldset class="pergunta">
+<legend>24. Tenho cuidado em só expor minha opnião em assuntos que domino</legend>
+<label><input type="radio" name="q24" value="C-1" required>1</label> <br>
+<label><input type="radio" name="q24" value="S-2">2</label><br>
+<label><input type="radio" name="q24" value="D-4" required>4</label><br>
+<label><input type="radio" name="q24" value="I-5">5</label>
+</fieldset>
+
+    
+
+    <button type="submit">Ver o perfil do Candidato</button>
+  </form>
+
+  <div id="resultado"></div>
+  <button id="btnPdf">Exportar Resultado em PDF</button>
+
+  <script>
+    document.getElementById("questionario").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+
+      if (!nome || !email || !telefone) {
+        alert("Preencha todos os campos de contato.");
+        return;
+      }
+
+      const formData = new FormData(event.target);
+      const perfis = { D: 0, I: 0, S: 0, C: 0 };
+
+      for (let [key, value] of formData.entries()) {
+        if (key.startsWith("q")) {
+          const [perfil, pontos] = value.split("-");
+          perfis[perfil] += parseInt(pontos);
+        }
+      }
+
+      const perfilFinal = Object.entries(perfis).sort((a, b) => b[1] - a[1])[0][0];
+      const nomes = { D: "Dominância", I: "Influência", S: "Estabilidade", C: "Conformidade" };
+
+      const resultadoTexto = 
+        `Nome: ${nome}\n` +
+        `E-mail: ${email}\n` +
+        `Telefone: ${telefone}\n\n` 
+
+      document.getElementById("resultado").innerText = resultadoTexto;
+      document.getElementById("btnPdf").style.display = "inline-block";
+
+      
+      window.resultadoDISC = {
+        nome,
+        email,
+        telefone,
+        perfil: nomes[perfilFinal],
+        pontuacoes: perfis,
+        data: new Date().toLocaleDateString()
+      };
+    });
+
+    document.getElementById("btnPdf").addEventListener("click", () => {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  const dados = window.resultadoDISC;
+
+  // 🌟 Cabeçalho com fundo azul escuro
+  doc.setFillColor(44, 62, 80); // azul escuro
+  doc.rect(0, 0, 210, 20, "F");
+  doc.setFontSize(16);
+  doc.setTextColor(255, 255, 255);
+  doc.setFont("helvetica", "bold");
+  doc.text("CANDIDADURA - AGGREGA BENEFICIOS", 105, 13, null, null, "center");
+
+  // 📌 Informações pessoais
+  doc.setFontSize(12);
+  doc.setTextColor(0);
+  doc.setFont("helvetica", "normal");
+  doc.text(`Nome: ${dados.nome}`, 20, 30);
+  doc.text(`E-mail: ${dados.email}`, 20, 37);
+  doc.text(`Telefone: ${dados.telefone}`, 20, 44);
+  doc.text(`Data: ${dados.data}`, 20, 51);
+
+  // 🔹 Linha separadora
+  doc.setDrawColor(160);
+  doc.line(20, 58, 190, 58);
+
+  // ⭐ Perfil predominante em destaque
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(14);
+  doc.setTextColor(34, 49, 63);
+  doc.text(`Perfil predominante: ${dados.perfil}`, 20, 70);
+
+  // 🧮 Tabela de pontuações
+  const { D, I, S, C } = dados.pontuacoes;
+  doc.setFontSize(12);
+  doc.setFont("helvetica", "normal");
+  doc.setTextColor(0);
+  doc.text("Pontuações:", 20, 85);
+  doc.text(`Dominância (D): ${D}`, 30, 92);
+  doc.text(`Influência (I): ${I}`, 30, 99);
+  doc.text(`Estabilidade (S): ${S}`, 30, 106);
+  doc.text(`Conformidade (C): ${C}`, 30, 113);
+
+  // 📝 Rodapé
+  doc.setFontSize(10);
+  doc.setTextColor(120);
+  doc.text(
+    "Relatório gerado automaticamente. Consulte um especialista para uma interpretação completa.",
+    20,
+    280
+  );
+
+  // 💾 Exportar
+  doc.save(`perfil_DISC_${dados.nome}.pdf`);
+});
+
+
+  </script>
+
+</body>
+</html>
