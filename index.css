@@ -50,8 +50,8 @@
   input[type="number"]
   {
     width: 100%;
-    padding: 80px;
-    margin-bottom: 9px;
+    padding: 50px;
+    margin-bottom: 3px;
     border: 2px solid var(--cor-borda-input);
     border-radius: 8px;
     background-color: var(--cor-fundo-input);
