@@ -275,7 +275,7 @@
   const doc = new jsPDF();
   const dados = window.resultadoDISC;
 
-  // 🌟 Cabeçalho com fundo azul escuro
+
   doc.setFillColor(44, 62, 80); // azul escuro
   doc.rect(0, 0, 210, 20, "F");
   doc.setFontSize(16);
@@ -283,7 +283,7 @@
   doc.setFont("helvetica", "bold");
   doc.text("CANDIDADURA - AGGREGA BENEFICIOS", 105, 13, null, null, "center");
 
-  // 📌 Informações pessoais
+  
   doc.setFontSize(12);
   doc.setTextColor(0);
   doc.setFont("helvetica", "normal");
@@ -292,17 +292,16 @@
   doc.text(`Telefone: ${dados.telefone}`, 20, 44);
   doc.text(`Data: ${dados.data}`, 20, 51);
 
-  // 🔹 Linha separadora
+
   doc.setDrawColor(160);
   doc.line(20, 58, 190, 58);
 
-  // ⭐ Perfil predominante em destaque
+
   doc.setFont("helvetica", "bold");
   doc.setFontSize(14);
   doc.setTextColor(34, 49, 63);
   doc.text(`Perfil predominante: ${dados.perfil}`, 20, 70);
 
-  // 🧮 Tabela de pontuações
   const { D, I, S, C } = dados.pontuacoes;
   doc.setFontSize(12);
   doc.setFont("helvetica", "normal");
@@ -313,7 +312,7 @@
   doc.text(`Estabilidade (S): ${S}`, 30, 106);
   doc.text(`Conformidade (C): ${C}`, 30, 113);
 
-  // 📝 Rodapé
+
   doc.setFontSize(10);
   doc.setTextColor(120);
   doc.text(
@@ -322,7 +321,7 @@
     280
   );
 
-  // 💾 Exportar
+
   doc.save(`perfil_DISC_${dados.nome}.pdf`);
 });
 
@@ -331,3 +330,4 @@
 
 </body>
 </html>
+
